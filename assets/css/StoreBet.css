@@ -1,0 +1,10 @@
+.tiles article.Store_style1 > .image:before {
+    background-color: #585858;
+}
+
+.tiles article.Store_style2 > .image:before {
+    background-color: #585858;
+}
+.tiles article.Store_style3 > .image:before {
+    background-color: #585858;
+}

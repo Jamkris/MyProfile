@@ -1,0 +1,63 @@
+#Profile_detail {
+  margin-bottom: 0.5em;
+}
+
+.main_image {
+  display: block;
+  text-align: center;
+}
+
+#profile_face_photo {
+  width: 20%;
+  margin-right: 5%;
+}
+
+#profile_icon {
+  width: 20%;
+  border: 1px solid black;
+}
+
+#profile_name {
+  font: italic bold 1em Georgia, serif ;
+}
+
+.profile_names {
+  display: inline-block;
+  margin-bottom: 18px;
+	text-align: left;
+}
+
+#My_Photo {
+  margin-left: 30%;
+  margin-right: 12%;
+}
+
+.introduction {
+  text-align: center ;
+  font: 0.9em serif;
+  margin-top: 3%;
+}
+
+.Subject {
+	margin-top: 35px;
+  margin-bottom: 8px;
+  font: bold 2em Georgia, serif;
+}
+
+#Mind_detail {
+  margin-top: 20px;
+}
+
+#Profile_Icon {
+  margin-bottom: 15px;
+  display: block;
+}
+
+.profile_icons {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.About_detail {
+  margin-top: 20px;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>SeoungHyun</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta property="og:title" content="Seounghyun's Learn">
+	<meta property="og:description" content="SeoungHyun의 지지식">
+	<meta property="og:image" content="images/아이콘.jpg">
+
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="shortcut icon" href="images/아이콘.jpg">
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+
+				<!-- Logo -->
+				<a href="index.html" class="logo">
+					<span class="symbol"><img src="images/아이콘.jpg" alt="" /></span><span class="title">About what I've learned</span>
+				</a>
+
+				<!-- Nav -->
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
+
+			</div>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<h2 id="Menuh2">Menu</h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Profile.html">Profile</a></li>
+				<li><a href="Project.html">Project</a></li>
+				<li><a href="Learn.html">Learn</a></li>
+				<li><a href="StoreBet.html">Store Bet</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+	
+
+		
+		<!--footer-->
+		<footer id="footer">
+			<div class="inner">
+				<section>
+					<h2 id="Sendh2">Send Email</h2>
+					<form method="post"
+						action="https://script.google.com/macros/s/AKfycbzUpu78sMltlNFuBHw-KXdpN5dP6A11vNXlitCfVrfTVPo-Kz98wPZ2WuNc-E8BZoPa/exec"
+						target="iframe1">
+						<div class="fields">
+							<div class="field half">
+								<input type="text" name="name" id="name" placeholder="Name" />
+							</div>
+							<div class="field half">
+								<input type="email" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="field">
+								<textarea name="message" id="message" placeholder="Message"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send" class="primary" type="reset"
+									onclick="alert('Sent Complete');document.querySelector('.primary').addEventListener('click', setTimeout(clear_, 500))" />
+							</li>
+						</ul>
+					</form>
+				</section>
+				<script data-cfasync="false" src="form-submission-handler.js"></script>
+				<iframe id="iframe1" name="iframe1" style="display:none"></iframe>
+
+
+				<section style="margin-bottom: 5%;">
+					<h2 id="Bottom_Follow">Follow</h2>
+					<ul class="icons">
+						<li><a href="https://github.com/Jamkris" class="icon brands style2 fa-github" target="_blank"
+								title="Jamkris"><span class="label">GitHub</span></a></li>
+						<li><a href="https://velog.io/@jamkris" class="icon brands style2 fa-vimeo" target="_blank"
+								title="Jamkris00"><span class="label">Velog</span></a></li>
+						<li><a href="https://www.instagram.com/hyun_2u/" class="icon brands style2 fa-instagram" target="_blank"
+								title="@hyun_2u"><span class="label">Instagram</span></a></li>
+						<li><a href="tel:010-2316-8774" class="icon solid style2 fa-phone" title="010-2316-8774"><span
+									class="label">Phone</span></a></li>
+						<li><a href="#" class="icon solid style2 fa-envelope" title="dltmdgus1412@gmail.com" onclick="alert('Please use the left \'Send Email\'');"><span
+									class="label">Email</span></a></li>
+					</ul>
+				</section>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+		function clear_() {
+			document.getElementById('name').value = null;
+			document.getElementById('email').value = null;
+			document.getElementById('message').value = null;
+		}
+	</script>
+
+
+</body>
+
+</html>

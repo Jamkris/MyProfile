@@ -1,0 +1,77 @@
+/*Main*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #e4f2fd;
+}
+
+#CoinGameontainer {
+	text-align: center;
+	width: 65vmin;
+	height: 65vmin;
+	background: lightgray;
+	justify-content: center;
+	top: 5%;
+}
+
+/*Back*/
+#CoinGame_Back_Button {
+	border: 0;
+	background-color: #585858;
+	color: #fff;
+	font-size: 2em;
+	padding: 10px 10px;
+	border-radius: 10px;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+
+#CoinGame_Back_Button:hover {
+	background-color: #F2849E;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#CoinGame_Back_Button:not(:hover) {
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+}
+
+/*Start,Reset Buuton*/
+.hidden {
+	display: none;
+	justify-content: center;
+}
+
+.startGroup {
+	position: fixed;
+}
+
+#StoreGame_Reset_Button, #StoreGame_Start_Button {
+	border: 0;
+	background-color: #585858;
+	color: #fff;
+	margin: 0 auto;
+	font-size: 30px;
+	padding: 1% 2.5%;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+}
+
+#_500_Back {
+	display: none;
+}
+#_500_Front {
+	display: none;
+}

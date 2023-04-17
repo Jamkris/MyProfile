@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta property="og:title" content="Seounghyun's CoinGame">
+  <meta property="og:description" content="Heads and Tails Probability Coin Game">
+  <meta property="og:image" content="../../images/Coin.jpg">
+  <title>SeoungHyun's CoinGame</title>
+  <link rel="shortcut icon" href="../../images/아이콘.jpg">
+  <link rel="stylesheet" href="Coin.css">
+  <script src="./Coin.js"></script>
+</head>
+
+<body>
+  <div><button id="CoinGame_Back_Button" type="button" onclick="location.href='../../StoreBet.html'">Back</button>
+  </div>
+
+  <div id="CoinGameontainer">
+    <div id="CoinGameImg">
+      <img src="../../images/500_앞.png" alt="Coin 500 Front" id="_500_Front" width="100%" height="100%">
+      <img src="../../images/500_뒤.png" alt="Coin 500 Back" id="_500_Back" width="100%" height="100%">
+    </div>
+
+    <div class="show">
+      <button id="StoreGame_Start_Button" onclick="
+				showGroup('StoreGame_Start_Button', 'StoreGame_Reset_Button');">
+        Start
+      </button>
+    </div>
+
+    <div class="hidden">
+      <button id="StoreGame_Reset_Button" onclick="
+			showGroup('StoreGame_Reset_Button', 'StoreGame_Start_Button');">
+        Reset
+      </button>
+      <img id="resultCoin" src="../../images/500_앞.png">
+    </div>
+  </div>
+</body>
+
+</html>

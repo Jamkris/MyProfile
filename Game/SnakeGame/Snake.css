@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#high-score, #score {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #e4f2fd;
+}
+
+.wrapper {
+		margin: 10px;
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    background: #F2849E;
+    border-radius: 5px;
+    box-shadow: 0 20px 40px rgba(53, 87, 220, 0.2);
+}
+
+.game-details {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-board {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    background: #585858;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+
+.play-board .food{
+    background: #ff003d;
+}
+
+.play-board .head {
+    background: #60cbff;
+}
+
+.controls {
+    display: none;
+    justify-content: space-between;
+}
+
+.controls i {
+    padding: 25px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #b8c6dc;
+    width: calc(100% / 4);
+    cursor: pointer;
+    border-right: 1px solid #F2849E;
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        width: 90vmin;
+        height: 115vmin;
+    }
+    .game-details {
+        font-size: 1rem;
+        padding: 15px 27px;
+    }
+
+    .controls {
+        display: flex;
+    }
+
+    .controls i {
+        padding: 15px 0;
+        font-size: 1rem;
+    }
+}
+
+#SnakeGame_Back_Button_Div {
+	display: block;
+}
+
+#SnakeGame_Back_Button {
+	border: 0;
+	background-color: #585858;
+	color: #fff;
+	font-size: 2em;
+	padding: 10px 10px;
+	border-radius: 10px;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+
+#SnakeGame_Back_Button:hover {
+	background-color: #F2849E;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#SnakeGame_Back_Button:not(:hover) {
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+}
+
+/* BackBotton */
+#CoinGame_Back_Button {
+	border: 0;
+	background-color: #585858;
+	color: #fff;
+	font-size: 2em;
+	padding: 10px 10px;
+	border-radius: 10px;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+
+#CoinGame_Back_Button:hover {
+	background-color: #F2849E;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#CoinGame_Back_Button:not(:hover) {
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+}

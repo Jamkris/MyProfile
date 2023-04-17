@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta property="og:title" content="Seounghyun's SnakeGame">
+	<meta property="og:description" content="Similar to Google Snake game">
+	<meta property="og:image" content="../../images/Snake_Game.png">
+	<link rel="shortcut icon" href="../../images/아이콘.jpg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="./Snake.css">
+	<title>Snake Game</title>
+</head>
+
+<body>
+	<div><button id="SnakeGame_Back_Button" type="button" onclick="location.href='../../StoreBet.html'">Back</button>
+	</div>
+	<div class="wrapper">
+		<div class="game-details">
+			<span class="score">Score : 0</span>
+			<span class="high-score">High Score : 0</span>
+		</div>
+
+		<div class="play-board"></div>
+
+		<div class="controls">
+			<i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
+			<i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
+			<i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
+			<i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
+		</div>
+
+	</div>
+
+
+
+	<script src="./Snake.js"></script>
+</body>
+
+</html>
