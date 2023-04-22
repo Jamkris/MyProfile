@@ -3344,6 +3344,11 @@ input, select, textarea {
 		text-transform : capitalize;
 	}
 
+	.easteregg {
+		text-transform: capitalize;
+		font-size: 16px;
+	}
+
 	#This_is_my_page {
 		margin-bottom: 0.5em;
 	}
@@ -3374,3 +3379,10 @@ input, select, textarea {
 	#Menuh2 {
 		margin-bottom: 1.2em;
 	}
+
+	#EasterEgg {
+		color: #585858;
+	}
+	#EasterEgg:hover {
+			color: red;
+		}
