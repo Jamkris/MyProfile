@@ -3358,7 +3358,7 @@ input, select, textarea {
 	}
 
 	#Main_img {
-		height: 350px;
+		height: 100%;
 	}
 
 	#Bottom_Follow {
