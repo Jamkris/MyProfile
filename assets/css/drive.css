@@ -1,0 +1,19 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    background-color: aqua;
+    padding: 15px;
+    text-align: center;
+    
+}
+
+.container_item {
+    display: inline;
+}
+.container_item:not(:last-child) {
+    margin-right: 10%;
+}
+

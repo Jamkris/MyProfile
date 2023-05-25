@@ -11,7 +11,8 @@ function Error(){
 function PassHome() {
 	const pass = prompt("Password");
 	if (pass == 1234) {
-		location.href="https://drive.google.com/drive/folders/1OUuTZagsygaqKwS1329jdfCF0NnEccFV"
+		var link = '../../drive.html';
+		location.href=link;
 	}
 	else {
 		alert("비밀번호가 틀렸습니다.")
