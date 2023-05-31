@@ -10,10 +10,7 @@ body {
     
 }
 
-.container_item {
+a .container_item {
     display: inline;
-}
-.container_item:not(:last-child) {
-    margin-right: 10%;
 }
 

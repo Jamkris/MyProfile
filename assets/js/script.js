@@ -9,9 +9,10 @@ function Error(){
 };
 
 function PassHome() {
-	const pass = prompt("Password");
+	const pass = prompt("Password (1234)");
 	if (pass == 1234) {
-		var link = '../../drive.html';
+		// var link = '../../drive.html';
+		var link = 'https://drive.google.com/drive/folders/1OUuTZagsygaqKwS1329jdfCF0NnEccFV?usp=sharing';
 		location.href=link;
 	}
 	else {
