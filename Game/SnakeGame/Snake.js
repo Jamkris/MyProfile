@@ -11,11 +11,9 @@ let snakeBody = [];
 let setIntervalId;
 let score = 0;
 
-//로컬스토리지 사용해서 high-score 가져옴
 let highScore = localStorage.getItem("high-score") || 0;
 highScoreElement.innerText = `High Score: ${highScore}`;
 
-//랜덤으로 먹이위치를 생성
 const updateFoodPosition = () => {
     foodX = Math.floor(Math.random() * 30) + 1;
     foodY = Math.floor(Math.random() * 30) + 1;
@@ -43,19 +41,17 @@ const changeDirection = e => {
     }
 }
 
-//모바일 버튼 생성
 controls.forEach(button => button.addEventListener("click", () => changeDirection({ key: button.dataset.key })));
 
 const initGame = () => {
     if (gameOver) return handleGameOver();
     let html = `<div class="food" style="grid-area: ${foodY} / ${foodX}"></div>`;
 
-    //먹이 먹으면
     if (snakeX === foodX && snakeY === foodY) {
         updateFoodPosition();
         snakeBody.push([foodY, foodX]);
         score++;
-        highScore = score >= highScore ? score : highScore; //최고점수 판단 & 바꾸기
+        highScore = score >= highScore ? score : highScore;
 
         localStorage.setItem("high-score", highScore);
         scoreElement.innerText = `Score: ${score}`;
@@ -71,15 +67,13 @@ const initGame = () => {
 
     snakeBody[0] = [snakeX, snakeY];
 
-    //벽에 부딪혔는 지 아닌지 판단
     if (snakeX <= 0 || snakeX > 30 || snakeY <= 0 || snakeY > 30) {
         return gameOver = true;
     }
 
-    //뱀 길이 div 추가
     for (let i = 0; i < snakeBody.length; i++) {
         html += `<div class="head" style="grid-area: ${snakeBody[i][1]} / ${snakeBody[i][0]}"></div>`;
-        // Check snake head hit body or no
+
         if (i !== 0 && snakeBody[0][1] === snakeBody[i][1] && snakeBody[0][0] === snakeBody[i][0]) {
             gameOver = true;
         }
