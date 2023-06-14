@@ -3,6 +3,9 @@ function Error(){
 	if (pass == 9924) {
 		location.href="https://drive.google.com/drive/folders/1xIqvoxinORkp9aXYqBhrAqoCvLt1syT4?usp=sharing";
 	}
+	else if (pass == 99249924) {
+		location.href="https://drive.google.com/drive/folders/189Arv0C5i9ZBp9NQWlIAd0Fd2p3flOQJ";
+	}
 	else {
 			alert("용케도 이스터에그를 찾았지만 비번이 있지 ㅋㅋ");
 	}
