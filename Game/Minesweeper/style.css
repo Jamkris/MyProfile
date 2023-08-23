@@ -143,14 +143,6 @@ label[for="cols"] {
     cursor: pointer;
 }
 
-.made_by {
-  margin-left: auto;
-  font-size: 20px;
-  position: relative;
-  bottom: 10px;
-  right: 20px;
-}
-
 
 #CoinGame_Back_Button {
 	border: 0;
